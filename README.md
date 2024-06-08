@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# PLEASE README First
+
+## Please open this application in mobile view for a better experience.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
