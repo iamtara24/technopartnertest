@@ -1,16 +1,19 @@
-import AlertComp from './components/AlertComp';
-import HeaderComp from './components/HeaderComp';
-import SummaryComp from './components/SummaryComp';
-import NavbarComp from './components/NavbarComp';
+import LoginPage from './view/auth/login';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NotificationPage from './view/NotificationPage';
 
 function App() {
   return (
-    <div className="App">
-      <AlertComp />
-      <HeaderComp />
-      <SummaryComp />
-      <NavbarComp />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route>
+          <Route index element={<LoginPage />} />
+          <Route path="notification" element={<NotificationPage />} />
+          {/* <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<NoPage />} /> */}
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
